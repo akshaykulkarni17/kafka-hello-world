@@ -27,10 +27,10 @@ public class TwitterProducer {
 
     final Logger logger = LoggerFactory.getLogger(TwitterProducer.class);
 
-    private String consumerKey = "bla";
-    private String consumerSecret = "bla";
-    private String token = "125370746-bla";
-    private String secret = "bla";
+    private String consumerKey = "hNpjOLMGTUttEMsX5XR0lTFII";
+    private String consumerSecret = "VrXorS1Oz9vBW60enVO7k9vNi2zhRI2ZMyKLfjFbhzfEpNvbHd";
+    private String token = "125370746-VXJ392N1NbA9FWPmWq2BOtIBQgnRhslVxJwTi4nm";
+    private String secret = "6DJHz7AG6OWSJYAFQXOJrHLKfIvwDCwfmgDZsS6S209Tg";
     
     public TwitterProducer() {
     }
@@ -98,7 +98,7 @@ public class TwitterProducer {
         Hosts hosebirdHosts = new HttpHosts(Constants.STREAM_HOST);
         StatusesFilterEndpoint hosebirdEndpoint = new StatusesFilterEndpoint();
         // Optional: set up some followings and track terms
-        List<String> terms = Lists.newArrayList("india");
+        List<String> terms = Lists.newArrayList("india","polkadot");
         hosebirdEndpoint.trackTerms(terms);
 
         // These secrets should be read from a config file
